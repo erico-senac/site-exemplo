@@ -1,0 +1,41 @@
+:root{
+    --cor1: rgba(63, 94, 251, 1);
+    --cor2: rgba(252, 70, 107, 1);
+    --angulo: 90deg;
+    --cor_branca: rgba(255, 255, 255, 1);
+}
+
+body{
+    background: linear-gradient(var(--angulo), var(--cor1) 0%, var(--cor2) 100%);
+}
+
+div.topo{
+    width: 60rem;
+    background-color: var(--cor_branca) ;
+    margin: auto;
+}
+
+.topo__titulo{
+    text-align: right;
+    border-bottom: 5px double;
+}
+
+nav.topo__navegacao ol{
+    padding: 0;
+    margin: 0;
+    border-bottom: 0.15rem solid;
+    background-color: rgba(0, 0, 255, 0.5);
+    width: 100%;
+}
+
+nav.topo__navegacao ol li {
+    display: inline;
+    list-style: none;
+}
+nav.topo__navegacao ol li a{
+    border-right: 0.15rem solid var(--cor_branca);
+    padding: 1rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
