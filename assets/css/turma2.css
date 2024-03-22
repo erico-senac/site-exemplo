@@ -1,41 +1,70 @@
+/* configurações iniciais */
 :root{
-    --cor1: rgba(63, 94, 251, 1);
-    --cor2: rgba(252, 70, 107, 1);
+    --cor1: rgb(35, 52, 139);
+    --cor2: rgba(112, 29, 39, 1);
     --angulo: 90deg;
     --cor_branca: rgba(255, 255, 255, 1);
+    --cor_branca_transparente: rgba(255, 255, 255, 0.25);
 }
-
+/* aplica a todos os elementos
+usado para resetar todos os valores */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* configurações do body */
 body{
-    background: linear-gradient(var(--angulo), var(--cor1) 0%, var(--cor2) 100%);
+    background: linear-gradient(var(--angulo), var(--cor1) 0%, var(--cor2) 50%, var(--cor1) 100%);
 }
 
+.main{
+    background-color: var(--cor_branca_transparente);
+    max-width: 60rem;
+    margin: auto;
+    height: 100vh
+}
+
+/* configurações do topo da páginas */
 div.topo{
     width: 60rem;
+    max-width: 60rem;
     background-color: var(--cor_branca) ;
     margin: auto;
 }
 
 .topo__titulo{
     text-align: right;
-    border-bottom: 5px double;
+    padding: .5rem;
+    /* border-bottom: 5px double; */
 }
 
+nav{
+    width: 100%;
+}
 nav.topo__navegacao ol{
     padding: 0;
     margin: 0;
-    border-bottom: 0.15rem solid;
-    background-color: rgba(0, 0, 255, 0.5);
+    /* border-bottom: 0.15rem solid; */
+    background-color: rgba(112, 29, 39, 1);
     width: 100%;
 }
 
 nav.topo__navegacao ol li {
     display: inline;
     list-style: none;
-}
-nav.topo__navegacao ol li a{
     border-right: 0.15rem solid var(--cor_branca);
+}
+
+nav.topo__navegacao ol li:last-child{
+    border-right: none;
+}
+
+nav.topo__navegacao ol li a{
     padding: 1rem 1rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
+    color: var(--cor_branca);
+    text-decoration: none;
 }
+

@@ -1,0 +1,52 @@
+html{
+    font-size: 7px;
+}
+tbody{
+    font-size: 8px;
+}
+tr{
+    font-size: 2em;
+}
+
+#unidade_em{
+    font-size: 3em;
+    color: magenta;
+}
+
+#unidade_ex{
+    font-size: 3ex;
+    color: #ecafee;
+}
+
+#unidade_px{
+    font-size: 8px;
+    color: rgb(75,125,200);
+}
+
+#unidade_grid{
+    font-size: 1gd;
+    color: rgba(175,12,200,1);
+}
+
+#unidade_rem{
+    font-size: 4rem;
+    color: hsl(5deg, 75%, 50%);
+}
+
+#unidade_vw{
+    font-size: 3vw;
+    color:hsla(65deg, 75%, 50%, 55%);
+}
+
+#unidade_vh{
+    font-size: 3vh;
+    color:hwb(190 26% 49%)
+}
+
+#unidade_vm{
+    font-size: 3vm;
+}
+
+#unidade_ch{
+    font-size: 1ch;
+}
