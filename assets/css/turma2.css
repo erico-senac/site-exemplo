@@ -1,4 +1,5 @@
 /* configurações iniciais */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Edu+SA+Beginner:wght@400..700&display=swap');
 :root{
     --cor1: rgb(35, 52, 139);
     --cor2: rgba(112, 29, 39, 1);
@@ -36,6 +37,8 @@ div.topo{
     text-align: right;
     padding: .5rem;
     /* border-bottom: 5px double; */
+    font-family: "Edu SA Beginner", cursive;
+    font-weight: bold;
 }
 
 nav{
@@ -45,7 +48,7 @@ nav.topo__navegacao ol{
     padding: 0;
     margin: 0;
     /* border-bottom: 0.15rem solid; */
-    background-color: rgba(112, 29, 39, 1);
+    background-color:var(--cor2);
     width: 100%;
 }
 
@@ -63,8 +66,17 @@ nav.topo__navegacao ol li a{
     padding: 1rem 1rem;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 900;
     color: var(--cor_branca);
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: "Caveat", cursive;
 }
 
+nav.topo__navegacao li:hover{
+    background-color: rgb(25, 135, 84);
+    border-radius: 0.75rem;
+}
+.fa-cor{
+    font-size: 1rem;
+}
