@@ -8,24 +8,39 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <title>Site de Exemplo</title>
 </head>
-<body>
-    <div class="main">
-        <div class="topo">
-            <div class="topo__titulo bg-body">
-                <h1>Turma 2 Técnico do SENAC</h1>
-                <h2>Site destinado a mostrar os resultado da turma</h2>
-            </div>
-            <nav class="topo__navegacao">
-                <ol>
-                    <li><a href="#"><i class=" fa-cor fa-solid fa-house-chimney-user"></i> Home</a></li>
-                    <li><a href="#"><i class=" fa-cor fa-solid fa-folder-closed"></i> Portifólios</a></li>
-                    <li><a href="#"><i class=" fa-cor fa-solid fa-newspaper"></i> Artigos CSS</a></li>
-                    <li><a href="#"><i class=" fa-cor fa-solid fa-newspaper"></i> Artigo HTML</a></li>
-                    <li><a href="#"><i class=" fa-cor fa-solid fa-address-book"></i> Contato</a></li>
-                </ol>
-            </nav>
+<body id="home">
+    <header class="topo">
+        <div class="topo__titulo bg-body">
+            <h1>Turma 2 Técnico do SENAC</h1>
+            <h2>Site destinado a mostrar os resultado da turma</h2>
         </div>
-    </div>
+        <nav class="topo__navegacao">
+            <ol>
+                <li><a href="#home"><i class=" fa-cor fa-solid fa-house-chimney-user"></i> Home</a></li>
+                <li><a href="#portifolio"><i class=" fa-cor fa-solid fa-folder-closed"></i> Portifólios</a></li>
+                <li><a href="#css"><i class=" fa-cor fa-solid fa-newspaper"></i> Artigos CSS</a></li>
+                <li><a href="#html"><i class=" fa-cor fa-solid fa-newspaper"></i> Artigo HTML</a></li>
+                <li><a href="#contatos"><i class=" fa-cor fa-solid fa-address-book"></i> Contato</a></li>
+                <div class="clear"></div>
+            </ol>
+        </nav>
+    </header>
+    <main class="principal">
+        <section id="portifolio">
+            <div class="portifolio">
+                <a href="./tabela_zebrada.html" target="_blank">Tabela Zebrada</a>
+            </div>
+        </section>
+        <section id="css">
+
+        </setion>
+        <section id="html">
+
+        </section>
+    </main>
+    <footer id="contatos" class="rodape">
+
+    </footer>
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/all.js"></script>
 </body>

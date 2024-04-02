@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Edu+SA+Beginner:wght@400..700&display=swap');
+:root{
+    --cor1: rgba(35, 52, 139, 1);
+    --cor2: rgba(112, 29, 39, 1);
+    --cor1-marcada: rgba(21, 155, 185, 0.1);
+    --cor2-marcada: rgba(112, 29, 39, 0.10);
+    --angulo: 90deg;
+    --cor_branca: rgba(255, 255, 255, 1);
+    --cor_branca_transparente: rgba(255, 255, 255, 0.25);
+    --fonte-principal:"Edu SA Beginner", cursive;
+    --fonte-secundaria: "Caveat", cursive;
+    --fonte-terciaria: "Edu NSW ACT Foundation", cursive;
+}
+
+body{
+    font-family: var(--fonte-principal);
+    /* background-color: rgb(211, 227, 197); */
+}
+
+table{
+    margin: auto;
+}
+.tabela, th, td{
+    border: solid 1px var(--cor1);
+    border-collapse: collapse;
+    font-size: 1.5rem;
+    padding: 5px ;
+}
+
+.tabela__cabecalho tr{
+    color: var(--cor_branca);
+    background-color: var(--cor2);
+}
+
+.tabela__cabecalho th,
+.tabela__principal td {
+    word-spacing: 5px;
+}
+
+.tabela__principal{
+    background-color: var(--cor1-marcada);
+}
+
+.tabela__principal .tabela__principal_marcada{
+    background-color: var(--cor2-marcada);
+}
+
+.tabela__rodape td{
+    text-align: right;
+    font-family: var(--fonte-secundaria);
+    background-color: var(--cor_branca_transparente);
+}
+
+[tabela]{
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+    url("../img/lizard.png");
+    background-size: contain;
+    background-repeat:  no-repeat;
+}
+.thead, .tbody{
+    display: flex;
+    justify-content: space-around;
+}
