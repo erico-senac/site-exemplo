@@ -1,8 +1,10 @@
 /* configurações iniciais */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Edu+SA+Beginner:wght@400..700&display=swap');
 :root{
-    --cor1: rgb(35, 52, 139);
+    --cor1: rgba(35, 52, 139, 1);
     --cor2: rgba(112, 29, 39, 1);
+    --cor1-marcada: rgba(21, 155, 185, 0.25);
+    --cor2-marcada: rgba(112, 29, 39, 0.25);
     --angulo: 90deg;
     --cor_branca: rgba(255, 255, 255, 1);
     --cor_branca_transparente: rgba(255, 255, 255, 0.25);
@@ -91,7 +93,10 @@ nav.topo__navegacao li:hover{
 
 main > section{
     display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
 }
+
 .portifolio{
     margin: 1rem;
     border-style: inset;
@@ -99,6 +104,7 @@ main > section{
     border-bottom-left-radius: 16px;
     border-top-right-radius: 16px;
     width: 8.5rem;
+    height: 2.5rem;
     text-align: center;
     background-color: var(--cor_branca);
     font-family: var(--fonte-principal);
@@ -113,4 +119,75 @@ main > section{
 
 .portifolio > a:visited{
     color: var(--cor2);
+}
+
+#css{
+    background-color: var(--cor1-marcada);
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.45rem;
+    justify-items: center;
+}
+.main__card {
+    width: 12rem;
+    height: 12rem;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-style: inset;
+    padding: 2.5rem;
+    text-align: center;
+}
+.cor_0{
+    background: linear-gradient(var(--angulo), var(--cor1) 0%, var(--cor_branca) 100%);
+}
+.cor_1{
+    background: linear-gradient(var(--angulo), var(--cor2-marcada) 0%, var(--cor1) 100%);
+}
+.cor_2{
+    background: linear-gradient(var(--angulo), var(--cor1-marcada) 0%, var(--cor2) 100%);
+}
+.cor_3{
+    background: linear-gradient(var(--angulo), var(--cor2-marcada) 0%, var(--cor_branca) 100%);
+}
+.cor_4{
+    background: linear-gradient(var(--angulo), var(--cor_branca) 0%, var(--cor1-marcada) 100%);
+}
+
+@media (max-width: 760px) {
+    html{
+        font-size: 12px;
+    }
+    
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.45rem;
+        justify-items: center;
+        transform: rotate(360deg);
+        transition: all 25s ease-out;
+    }
+    .main__card{
+        widows: 10rem;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 10px;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 0.45rem;
+    }
+
+    .main__card{
+        widows: 5rem;
+        height: 5rem;
+    }
 }
